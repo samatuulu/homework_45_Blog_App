@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Todo
+ {% endblock %}
+{% block menu %}
+    <li><a href="{% url 'create' %}">Add jobs(+)</a></li>
+{% endblock %}
+
+{% block content %}
+
+    <h1>To do list app</h1>
+    {% for job in jobs %}
+
+        <h2>Job status: {{ job.status }}</h2>
+        <div>Job description: {{ job.description }}</div>
+        <p>Finish by: {{ job.date_of_completion|date:'Y-m-d' }}</p>
+        <p><a href="{% url 'detail' job.pk %}">More info...</a></p>
+        <p><a href="{% url 'update' job.pk %}">Edit</a></p>
+        <p><a href="{% url 'delete' job.pk %}">Delete</a></p>
+
+    {% endfor %}
+
+{% endblock %}

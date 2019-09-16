@@ -1,0 +1,50 @@
+[
+{
+  "model": "todo_list.things",
+  "pk": 103,
+  "fields": {
+    "status": "new",
+    "description": "Work on project ",
+    "description_more": "",
+    "date_of_completion": "2019-09-09"
+  }
+},
+{
+  "model": "todo_list.things",
+  "pk": 104,
+  "fields": {
+    "status": "in_process",
+    "description": "Homework tasks",
+    "description_more": "work with database and make sure if it works.",
+    "date_of_completion": "2019-09-09"
+  }
+},
+{
+  "model": "todo_list.things",
+  "pk": 105,
+  "fields": {
+    "status": "done",
+    "description": "Respond to email ",
+    "description_more": "",
+    "date_of_completion": "2019-09-07"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$eUz9IMVcdr6Y$Q5fenB19dXXZzrycEZeCAgRf+amlLvvSto+Za9bR4oU=",
+    "last_login": "2019-09-08T09:56:19.028Z",
+    "is_superuser": true,
+    "username": "bektursun",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-03T06:13:55.456Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

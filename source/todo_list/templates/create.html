@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Create To Do list
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>To do list app</h1>
+
+    <form method="post" action="{% url 'create' %}">
+
+        {% csrf_token %}
+
+    {% include 'partial/job_form.html' %}
+        <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+
+    </form>
+</div>
+
+{% endblock %}
