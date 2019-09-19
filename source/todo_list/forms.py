@@ -10,6 +10,6 @@ class DateInput(forms.DateInput):
 class JobForm(forms.Form):
     status = forms.ChoiceField(choices=STATUS_CHOICES, initial='new', required=True, label='Job Status')
     description = forms.CharField(required=True, widget=widgets.Textarea, label='Description')
-    description_more = forms.CharField(widget=widgets.Textarea, label='Description more')
+    description_more = forms.CharField(widget=widgets.Textarea, label='Description more', required=False)
     date_of_completion = forms.DateField(required=False, widget=DateInput)
 

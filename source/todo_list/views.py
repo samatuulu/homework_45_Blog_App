@@ -53,6 +53,7 @@ def job_update_view(request, pk):
             job.description = form.cleaned_data['description']
             job.description_more = form.cleaned_data['description_more']
             job.date_of_completion = form.cleaned_data['date_of_completion']
+            job.save()
 
         return redirect('detail', job.pk)
 
