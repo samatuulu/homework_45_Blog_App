@@ -66,5 +66,5 @@ def delete_task(request, pk):
         job.delete()
         return redirect('home')
 
-
+#modified
 
